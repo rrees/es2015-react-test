@@ -1,0 +1,25 @@
+
+<html>
+    <head>
+    </head>
+
+    <body>
+        <div id="container"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/react-with-addons.js"></script>
+
+        <script>
+            var Hello = React.createClass({
+                render: function() {
+                    return React.createElement("p", null,
+                        `Hello ${this.props.name}`)
+                }
+            });
+
+            React.render(
+                React.createElement(Hello, {name: "World"}),
+                document.getElementById('container')
+            );
+        </script>
+    </body>
+</html>
